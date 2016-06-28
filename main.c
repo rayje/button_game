@@ -50,7 +50,6 @@ void processButtonPress(int button) {
             if (button == 1) PORTD |= 1 << ledNumber[button];
             ledNumber[button]++;
 
-            // side 1 wins
             if (ledNumber[button] > 6) {
                 // flash LEDs
                 int i;
